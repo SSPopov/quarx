@@ -34,5 +34,5 @@ jobs:
             **/node_modules
             ./node_modules
           key: ${{ runner.os }}-nm-${{ hashFiles('**/yarn.lock') }}
-      - run: yarn run test:init
+      - run: yarn run e2e:init
       - run: yarn run test:e2e
