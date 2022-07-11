@@ -1,6 +1,6 @@
 import { PlaywrightTestConfig, devices } from '@playwright/test';
 
-const baseURL = 'http://localhost:6013/';
+const baseURL = 'https://quarx-ui.github.io/quarx/storybook/main/';
 const deviceScaleFactor = 2;
 
 const config: PlaywrightTestConfig = {
