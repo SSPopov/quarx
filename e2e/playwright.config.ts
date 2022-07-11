@@ -1,6 +1,6 @@
 import { PlaywrightTestConfig, devices } from '@playwright/test';
 
-const baseURL = 'http://localhost:6013/';
+const baseURL = 'https://quarx-ui.github.io/quarx/storybook/main/';
 const deviceScaleFactor = 2;
 
 const config: PlaywrightTestConfig = {
@@ -29,11 +29,6 @@ const config: PlaywrightTestConfig = {
             },
         },
     ],
-    webServer: {
-        reuseExistingServer: true,
-        port: 6013,
-        command: 'yarn run e2e:serve',
-    },
     use: {
         baseURL,
     },

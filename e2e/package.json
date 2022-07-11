@@ -7,7 +7,7 @@
     "e2e:build:kit": "rm -Rf builds/kit && mv ../packages/core/build builds/kit",
     "e2e:build:icons": "rm -Rf builds/kit-icons && mv ../packages/icons/build builds/kit-icons",
     "e2e:build": "cd .. && yarn run build && cd e2e && mkdir -p builds && yarn run e2e:build:kit && yarn run e2e:build:icons",
-    "test:init": "npx playwright install",
+    "test:init": "yarn install --production=false && npx playwright install",
     "test": "npx playwright test",
     "test:chrome": "yarn test --project=chromium",
     "test:firefox": "yarn test --project=firefox",
