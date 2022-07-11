@@ -29,11 +29,6 @@ const config: PlaywrightTestConfig = {
             },
         },
     ],
-    webServer: {
-        reuseExistingServer: true,
-        port: 6013,
-        command: 'yarn run e2e:serve',
-    },
     use: {
         baseURL,
     },
